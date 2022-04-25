@@ -13,7 +13,8 @@ struct FirebaseChatApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            LoginView()
+            MainMessagesView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
